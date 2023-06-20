@@ -8,7 +8,12 @@
 
 SELECT 
         rooms."id", rooms."roomTypeId", rooms."roomNumber",
-        least(
+       
+  /* compute how many unrented days are on either side of this new booking */
+  /* so that we can sort by most optimal, and select first option */
+  /* this query finds the booking that happened most recently before this booking in that room */
+  /* and counts the number of days between it and our new booking check in date */
+   least(
           coalesce(
             (
               select 
@@ -33,6 +38,8 @@ SELECT
           365
         ) 
         + 
+          /* this query finds the booking that happens after this booking in that room */
+  /* and counts the number of days between it and our new booking check out date */
         least(
           coalesce(
             (
