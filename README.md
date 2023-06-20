@@ -3,4 +3,4 @@ This is a repository for find-once queries that have been optimized at your disp
 
 ### Queries.
 - [Geospatial Indexing](https://github.com/divinirakiza/optimized-queries/tree/main/geospatial-indexing)
-- [Availability Search](https://github.com/divinirakiza/optimized-queries/tree/main/availability)
+- [Availability Search](https://github.com/divinirakiza/optimized-queries/tree/main/availability-search)
