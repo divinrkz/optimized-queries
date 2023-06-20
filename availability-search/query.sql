@@ -3,8 +3,7 @@
 -- SET @rooomTypeId = '';
 
 
---Find available room given a checkInDate, checkOutDate, and roomTypeId
-
+--Find available room given a checkInDate, checkOutDate, and roomTypeId.
 
 SELECT 
         rooms."id", rooms."roomTypeId", rooms."roomNumber",
